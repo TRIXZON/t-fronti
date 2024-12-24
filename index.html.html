@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Page</title>
+    <style>
+        /* Inbuilt Styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000000; /* Matte black background */
+            color: #ffffff; /* White font color */
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #ffffff; /* White text */
+            background-color: #333333; /* Dark gray button */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555555; /* Slightly lighter gray on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Trixzon</h1>
+        <button id="startButton">Start</button>
+    </div>
+    <script>
+        // JavaScript logic
+        document.getElementById('startButton').addEventListener('click', () => {
+            window.location.href = 'http://127.0.0.1:5000'; // Redirect to local server
+        });
+    </script>
+</body>
+</html>
